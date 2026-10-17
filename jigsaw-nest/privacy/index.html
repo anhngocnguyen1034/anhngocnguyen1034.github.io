@@ -5,14 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jigsaw Nest: Art Puzzle · Privacy policy</title>
 <style>
-  :root { --bg: #f4f4ff; --card: #ffffff; --ink: #2e2f5b; --strong: #1c1d40; --muted: #6d6f9a; --brand: #4b4eee; --line: #d6d7ff; }
+  :root { --bg: #f4f4ff; --card: #ffffff; --ink: #2e2f5b; --strong: #1c1d40; --muted: #6d6f9a; --brand: #4b4eee; --on-brand: #ffffff; --line: #d6d7ff; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #120f1d; --card: #1c1929; --ink: #efedf7; --strong: #ffffff; --muted: #9a93b8; --brand: #bba8ff; --on-brand: #120f1d; --line: #3b3555; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #120f1d; --card: #1c1929; --ink: #efedf7; --strong: #ffffff; --muted: #9a93b8; --brand: #bba8ff; --on-brand: #120f1d; --line: #3b3555; color-scheme: dark; }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
   header { padding: 28px 16px 4px; text-align: center; }
   header h1 { font-size: 26px; color: var(--brand); letter-spacing: .5px; margin: 0; }
   header p { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
   nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; padding: 14px 16px 4px; }
-  nav a { color: #ffffff; background: var(--brand); text-decoration: none; padding: 4px 12px; border-radius: 999px; font-weight: 600; font-size: 13px; }
+  nav a { color: var(--on-brand); background: var(--brand); text-decoration: none; padding: 4px 12px; border-radius: 999px; font-weight: 600; font-size: 13px; }
   main { max-width: 760px; margin: 0 auto; padding: 8px 16px 32px; }
   section { background: var(--card); border: 3px solid var(--line); border-radius: 14px; padding: 4px 20px 16px; margin: 22px 0; }
   h2 { font-size: 20px; color: var(--brand); margin: 18px 0 2px; }
